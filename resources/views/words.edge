@@ -1,0 +1,14 @@
+<h1>{{ title }}</h1>
+<h2>Palabras ordenadas:</h2>
+<ul>
+  @each(word in words)
+    <li>{{ word }}</li>
+  @endeach
+</ul>
+
+<h2>Palabras en orden inverso:</h2>
+<ul>
+  @each(word in words.reverse())
+    <li>{{ word }}</li>
+  @endeach
+</ul>
